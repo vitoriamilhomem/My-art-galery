@@ -1,0 +1,61 @@
+body{
+    margin: 0%;
+    font-family: Arial, sans-serif;
+}
+header{
+    background-color: #FBFC93;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0em 1em;
+}
+header h2{
+    color: #174E60;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.navegação a{
+    margin-left: 2em;
+    text-decoration: none;
+    color:#174E60;
+}
+.navegação a:hover{
+    color: #929454;
+}
+#Artistas{
+    background-color: white;
+    color: #174E60;
+    padding: 0.5em;
+}
+#Artistas h1{
+    padding: 20;
+    margin-left: 2em;
+}
+#Artistas img{
+    margin-left: 2em;
+}
+#Info-Artistas{
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+    margin-right: 2em;
+    line-height: 1.2;
+}
+#Info-Artistas p{
+    max-width: 600;
+}
+#Obras{
+    text-align: center;
+    background-color: #174E60;
+    padding: 0.5em;
+}
+footer{
+    background-color: #FBFC93;
+    color: #174E60;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+footer a{
+    margin-left: 10px;
+}
