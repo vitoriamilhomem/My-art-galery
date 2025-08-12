@@ -1,61 +1,90 @@
-body{
-    margin: 0%;
+body {
+    margin: 0;
     font-family: Arial, sans-serif;
 }
-header{
+
+header {
     background-color: #FBFC93;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     padding: 0em 1em;
 }
-header h2{
+
+header h2 {
     color: #174E60;
     font-weight: bolder;
     font-size: 25px;
 }
-.navegação a{
+
+.navegação a {
     margin-left: 2em;
     text-decoration: none;
-    color:#174E60;
+    color: #174E60;
 }
-.navegação a:hover{
+
+.navegação a:hover {
     color: #929454;
 }
-#Artistas{
+
+#Artistas {
     background-color: white;
     color: #174E60;
     padding: 0.5em;
 }
-#Artistas h1{
-    padding: 20;
+
+#Artistas h1 {
+    padding: 20px 0;
     margin-left: 2em;
 }
-#Artistas img{
-    margin-left: 2em;
-}
-#Info-Artistas{
+
+#Info-Artistas {
     display: flex;
     align-items: flex-start;
-    gap: 80px;
-    margin-right: 2em;
-    line-height: 1.2;
+    gap: 30px;
+    margin: 0 2em;
+    line-height: 1.4;
+    flex-wrap: wrap; /* Para quebrar no celular */
 }
-#Info-Artistas p{
-    max-width: 600;
+
+#Info-Artistas img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
 }
-#Obras{
+
+#Info-Artistas p {
+    max-width: 600px;
+}
+
+#Obras {
     text-align: center;
     background-color: #174E60;
-    padding: 0.5em;
+    padding: 1em;
 }
-footer{
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+footer {
     background-color: #FBFC93;
     color: #174E60;
-    justify-content:space-between;
-    align-items: center;
     padding: 10px 20px;
-}
-footer a{
-    margin-left: 10px;
+    text-align: center;
 }
